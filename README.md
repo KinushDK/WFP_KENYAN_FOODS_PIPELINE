@@ -109,15 +109,15 @@ Sugar, and Bread across multiple counties and markets from 2006 to present.
 ```
 WFP_FOODS_PIPELINE/
 │
-├── dags/                               # Airflow DAG files
+├── dags/                               
 │   ├── data/
-│   │   └── wfp_food_prices_ken.csv     # Source CSV data
-│   └── wfp_food_pipeline_dag.py        # Main ETL DAG
+│   │   └── wfp_food_prices_ken.csv
+│   └── wfp_food_pipeline_dag.py
 │
-├── wfp_foods/                          # dbt project
+├── wfp_foods/
 │   ├── models/
 │   │   ├── staging/
-│   │   │   └── stg_food_prices.sql     # Staging model
+│   │   │   └── stg_food_prices.sql
 │   │   └── marts/
 │   │       └── analytics/
 │   │           ├── average_price_by_county_and_year.sql
@@ -135,17 +135,17 @@ WFP_FOODS_PIPELINE/
 ├── metabase/
 │   └── provisioning/
 │       └── datasources/
-│           └── datasource.yaml         # Auto-connects Grafana to PostgreSQL
+│           └── datasource.yaml
 │
-├── logs/                               # Airflow logs
-├── plugins/                            # Airflow plugins
-├── config/                             # Airflow config
-├── dbt_venv/                           # dbt virtual environment
-├── .env                                # Environment variables
-├── docker-compose.yaml                 # Airflow + Grafana services
-├── docker-compose.metabase.yaml        # Metabase service (separate)
-├── wfp_clean.ipynb                     # Exploratory notebook
-└── wfp_food_prices_ken.csv             # Raw source data
+├── logs/
+├── plugins/
+├── config/
+├── dbt_venv/
+├── .env
+├── docker-compose.yaml
+├── docker-compose.metabase.yaml
+├── wfp_clean.ipynb
+└── wfp_food_prices_ken.csv
 ```
 
 ---
